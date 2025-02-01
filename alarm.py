@@ -2,7 +2,7 @@ import time as tm
 import datetime
 import pygame
 
-sound_file = "/home/irwan-hendriansyah/Documents/Belajar/PythonNgulang/projectbelajar/HomecomingSamsungRingtone.mp3"
+sound_file = "HomecomingSamsungRingtone.mp3"
 def input_alarm():
     print("set alarm:")
     run = 1
@@ -51,7 +51,7 @@ def alarm(alarm_clock):
         print(current_time)
         tm.sleep(1)
         if current_time == alarm_clock:
-            print("WAKE UP NIGGA")
+            print("WAKE UP")
             pygame.mixer.init()
             pygame.mixer.music.load(sound_file)
             pygame.mixer.music.play()
